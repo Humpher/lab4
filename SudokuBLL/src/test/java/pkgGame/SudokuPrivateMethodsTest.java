@@ -124,4 +124,22 @@ public class SudokuPrivateMethodsTest {
 		}
 
 	}
+	
+	@Test
+	
+	public void Sudoku_Test() {
+		
+		try {
+			Sudoku gen = new Sudoku(9);
+			gen.PrintPuzzle();
+			gen.isSudoku();
+		}
+		
+		catch(Exception e) {
+			fail("Sudoku failed to generate");
+			
+		}
+	}
+	
+	
 }
